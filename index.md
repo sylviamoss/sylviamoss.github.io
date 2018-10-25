@@ -3,8 +3,10 @@ layout: default
 ---
 
 I'm a Computer Engineer currently working as Consultant Developer @ ThoughtWorks Brazil.  
-I love technology and I believe that with empathy, it can do a wonderful work  
-  
+I love technology and I believe that with empathy, it can do a wonderful work
+<br>
+<br>
+
 
 <!-- 
 
