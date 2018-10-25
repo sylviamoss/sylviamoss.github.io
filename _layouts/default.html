@@ -5,9 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/print.css' | relative_url }}" media="print">
-    <link rel="stylesheet" type="text/css" href="/assets/css/materialdesignicons.min.css" media="print">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -21,13 +22,32 @@
         <header>
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
           <h2>{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-          {% include social.html %}
+          <div id="social-icons">
+            <a href="https://www.linkedin.com/in/sylviamossm/">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/sylviamoss">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://medium.com/@sylviamoss">
+              <i class="fab fa-medium"></i>
+            </a>
+          </div>
         </header>
         <hr>
 
         <section id="main_content">
           {{ content }}
-          {% include technologies.html %}
+          <div id="technologies-icons">
+            <i class="fab fa-java" title="Java"></i>
+            <i class="devicons devicons-scala" title="Scala"></i>
+            <i class="devicon-csharp-plain" title="C#"></i> 
+            <i class="devicons devicons-mongodb" title="MongoDB"></i> <br>
+            <i class="devicon-mysql-plain" title="MySQL"></i> 
+            <i class="fab fa-docker" title="Docker"></i>
+            <i class="fab fa-aws" title="AWS"></i>
+            <i class="devicon-git-plain" title="Git"></i>
+        </div>
         </section>
 
         <footer>
