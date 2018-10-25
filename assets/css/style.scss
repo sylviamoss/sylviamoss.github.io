@@ -11,9 +11,12 @@ header h1, body h2 {
     letter-spacing: 4px;
 }
 
-#social-icons .fab {
-    font-size: 150%;
-    padding: 1%;
+#social-icons  {
+    .fab, .fas {
+        font-size: 150%;
+        padding: 1%;
+        padding-bottom: 0%;
+    }
 }
 
 #technologies-icons {
