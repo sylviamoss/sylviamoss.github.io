@@ -2,7 +2,7 @@
 layout: default
 ---
 
-## ABOUT ME
+
 I'm a Computer Engineer. Currently working as Consultant Developer @ ThoughtWorks Brazil.  
 I love technology and I believe that with empathy, it can do a wonderful work
 
