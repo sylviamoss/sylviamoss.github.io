@@ -1,5 +1,0 @@
----
-layout: technologies
----
-
-## TECHNOLOGIES  
