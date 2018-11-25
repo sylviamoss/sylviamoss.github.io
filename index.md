@@ -2,9 +2,11 @@
 layout: default
 ---
 
-I'm a mother of cats and dog and a Computer Engineer.  
-Currently, working as Consultant Developer @ ThoughtWorks Brazil.   
-I believe that technology is better done with empathy.
+I believe technology is better when developed with empathy, and I’m exercising this belief currently as a Consultant Developer at ThoughtWorks Brazil.  
+
+I am Sylvia Moss, Computer Engineer and animal lover.  
+
+Check out below some of the technologies and projects I’ve worked with. Contact me and let’s build some thoughtful, emphatic tech together!  
 <br>
 
 
