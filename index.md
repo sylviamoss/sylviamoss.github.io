@@ -2,7 +2,7 @@
 layout: default
 ---
 
-I believe technology is better when developed with empathy, and I’m exercising this belief currently as a Consultant Developer at ThoughtWorks Brazil.  
+I believe technology is better when developed with empathy, and I’m exercising this belief currently as a Java Developer at audibene GmbH.  
 
 I am Sylvia Moss, Computer Engineer and animal lover.  
 
