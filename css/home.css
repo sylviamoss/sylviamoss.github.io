@@ -1,0 +1,13 @@
+body {
+    text-align: justify;
+}
+
+#technologies-icons-resume {
+    font-size: 200%;
+    margin: 0;
+    /* text-align: center; */
+}
+
+#download-resume {
+    font-size: small;
+}
