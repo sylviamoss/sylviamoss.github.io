@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sylvia Moss</title>
@@ -27,12 +27,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sylviamoss.github.io/resume/</guid>
-      <description>Download full resume  B.Sc. in Computer Engineer
-Working remote and living in Berlin
-Contact
-PROFESSIONAL EXPERIENCE Software Engineer at audibene GmbH, June 2019 - October 2019
-The Hearing Aids Sale Company
-Improved the customer experience when buying hearing aids by working in the team responsible for building a chat system and a RESTFul API consumed by the web and app applications used by consultants to keep in touch with the customers.</description>
+      <description>Download full resume  **B.Sc. in Computer Engineer** Working remote and living in Berlin [Contact](mailto:sylviamoss.m@gmail.com) PROFESSIONAL EXPERIENCE Software Engineer at audibene GmbH, June 2019 - October 2019
+The Hearing Aids Sale Company Improved the customer experience when buying hearing aids by working in the team responsible for building a chat system and a RESTFul API consumed by the web and app applications used by consultants to keep in touch with the customers.</description>
     </item>
     
     <item>
@@ -41,7 +37,7 @@ Improved the customer experience when buying hearing aids by working in the team
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://sylviamoss.github.io/playlist/</guid>
-      <description> made by me   spotify   </description>
+      <description> made by me   spotify  </description>
     </item>
     
   </channel>

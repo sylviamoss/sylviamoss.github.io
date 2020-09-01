@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <meta name="generator" content="Hugo 0.57.2" />
+  <meta name="generator" content="Hugo 0.74.3" />
   <link rel="canonical" href="https://sylviamoss.github.io/smb-client-on-circleci/">
 
   
@@ -35,6 +35,7 @@
   
   
   <title>Acceptance testing a SMB client on CircleCI | Sylvia Moss</title>
+  <meta name="google-site-verification" content="-kYqV7TxyGenD7O0fnxjDXJvhinpuFeDgLcYvNU0AqU" />
 </head>
 
   <body>
@@ -294,39 +295,23 @@
 
     
 
-    
-
-<h2 id="background">Background</h2>
-
+    <h2 id="background">Background</h2>
 <p>The <a href="https://github.com/hashicorp/go-getter">hashicorp/go-getter</a> library is largely used through HashiCorp products such as <a href="https://www.packer.io/">Packer</a>, <a href="https://www.nomadproject.io/">Nomad</a>, and <a href="https://www.terraform.io/">Terraform</a>. According to the library documentation:</p>
-
 <blockquote>
 <p>go-getter is a library for Go (golang) for downloading files or directories from various sources using a URL as the primary form of input. The power of this library is being flexible in being able to download from a number of different sources (file paths, Git, HTTP, Mercurial, etc.) using a single string as input.</p>
 </blockquote>
-
 <p>Thinking about the power of the library and to better respond to some of these products needs, <a href="https://github.com/hashicorp/go-getter">hashicorp/go-getter</a> would implement a new Getter type to get artifacts from a shared folder using the SMB protocol.</p>
-
 <p>The proposed SMB getter would use the smbclient command and the code had to be well tested to make sure all the use cases were addressed. The challenge here was to start a SMB server on CircleCI and make the SMB getter tests, as the SMB client, try to download files from the shared folder.</p>
-
 <h3 id="how-smb-works">How SMB works</h3>
-
 <p>The SMB protocol works by allowing the communication between the SMB server and the SMB clients.
 You can start a SMB server in your machine with any desired configuration, such as authentication, and share the directory you like in the network you&rsquo;re connected. The other machines in the networks can access the shared directory, as SMB clients, whether they are permitted or not, by using the server IP or domain name.</p>
-
 <h2 id="how-to-run-a-smb-server-and-client-on-circleci">How to run a SMB server and client on CircleCI</h2>
-
 <p>In order to have a SMB server/client communication working in place, it is necessary to have two instances in the same network that would represent each side of the communication, and docker containers make it possible to create that.</p>
-
 <p>For the SMB server, the base image is the <a href="https://github.com/dperson/samba">dperson/samba</a> image and for the client the <code>golang</code> base image, because <a href="https://github.com/hashicorp/go-getter">hashicorp/go-getter</a> is implemented in golang.</p>
-
 <h3 id="running-multiple-containers-on-circleci">Running multiple containers on CircleCI</h3>
-
 <p>It turns out that CircleCI allows to run docker commands, including docker-compose, to build and run docker images and container by just adding the step <code>setup_remote_docker</code> to the job steps. See <a href="https://circleci.com/docs/2.0/building-docker-images/">CircleCI documentation</a> to learn more about it.</p>
-
 <h3 id="writing-a-docker-compose">Writing a docker-compose</h3>
-
 <p>To make sure the smb server and the go-getter containers are in the same network, the best way to this is to write a docker-compose file that will configure both containers.</p>
-
 <pre><code>version: '3.2'
 
 services:
@@ -362,15 +347,10 @@ services:
 networks:
   default:
 </code></pre>
-
 <p>This docker-compose creates the containers in the same network and makes sure the containers know each other by their names (samba and gogetter). In other words, the go-getter container can access any smb shared folder by using <code>samba</code> as a host name.</p>
-
 <p>The samba server will have a user, and two shares, one public and another private. The go-getter will depend on the samba container to start.</p>
-
 <h3 id="dockerfiles">Dockerfiles</h3>
-
 <p>Dockerfile:</p>
-
 <pre><code># Dockerfile to create a go-getter container with smbclient dependency that is used by the get_smb.go tests
 FROM golang:latest
 
@@ -381,11 +361,8 @@ RUN go mod download
 RUN apt-get update
 RUN apt-get -y install smbclient
 </code></pre>
-
 <p>A simple Dockerfile that will build an image with the necessary settings to run the SMB acceptance tests, including the smbclient, and it will be used to start the gogetter container. CircleCI doesn&rsquo;t allow to mount volumes and because of that it is necessary to copy the source code.</p>
-
 <p>Dockerfile-smbserver:</p>
-
 <pre><code># Dockerfile to create a smb server that is used by the get_smb.go tests
 FROM dperson/samba
 
@@ -396,13 +373,9 @@ RUN mkdir -p /public &amp;&amp; mkdir -p /private
 RUN echo 'Hello' &gt; /public/file.txt &amp;&amp; mkdir -p /public/subdir  &amp;&amp; echo 'Hello' &gt; /public/subdir/file.txt
 RUN echo 'Hello' &gt; /private/file.txt &amp;&amp; mkdir -p /private/subdir  &amp;&amp; echo 'Hello' &gt; /private/subdir/file.txt
 </code></pre>
-
 <p>This creates the SMB server image with the mock files and directories in the public and private shares, and it will be used to start the samba container.</p>
-
-<h3 id="the-circleci-config-yml-file">The .circleci/config.yml file</h3>
-
+<h3 id="the-circleciconfigyml-file">The .circleci/config.yml file</h3>
 <p>With docker-compose and Dockerfiles set in the go-getter project, CircleCI job steps will build and start the containers using <code>docker-compose</code> command. If no version is set to <code>setup_remote_docker</code>, then CircleCI will use the default version <code>17.09.0-ce</code>.</p>
-
 <pre><code> go-smb-test:
     docker:
       - image: circleci/golang:1.14.1
@@ -426,17 +399,14 @@ RUN echo 'Hello' &gt; /private/file.txt &amp;&amp; mkdir -p /private/subdir  &am
             docker exec -it gogetter bash -c &quot;env ACC_SMB_TEST=1 go test -v ./... -run=TestSmb_&quot;
 
 </code></pre>
-
 <p>The samba container takes around 1 minute to start and the necessary command to run the tests are executed inside the gogetter container. The tests will run inside the container and CircleCI will print out all of the logs and will fail whenever the tests fails inside the gogetter container.</p>
-
 <h3 id="call-for-action">Call for action</h3>
-
 <p>This configuration uses linux machines for the server and the client. For <a href="https://www.packer.io/">Packer</a>, as example, most of the known users that uses SMB protocol to get artifacts are Windows users, therefore it will be great to make sure that the SMB getter is also tested for other OSes such as Windows and MacOS.</p>
-
-<p>Besides that, there&rsquo;s always room for improvement and some future work can be added to list:
-- Speed up the image building by using the <code>docker_layer_caching</code> provided by CircleCI.
-- Store test results</p>
-
+<p>Besides that, there&rsquo;s always room for improvement and some future work can be added to list:</p>
+<ul>
+<li>Speed up the image building by using the <code>docker_layer_caching</code> provided by CircleCI.</li>
+<li>Store test results</li>
+</ul>
 <p>If you think you can contribute to making some improvements on this, HashiCorp would love to have your contribution either by opening a pull request with the solution or reporting an <a href="https://github.com/hashicorp/go-getter/issues">issue</a> as a proposed enhancement to the <a href="https://github.com/hashicorp/go-getter">hashicorp/go-getter</a> library. Feel welcome!</p>
 
   </main>
