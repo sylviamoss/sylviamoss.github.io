@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Blog on Sylvia Moss</title>
-    <link>https://sylviamoss.github.io/post/</link>
-    <description>Recent content in Blog on Sylvia Moss</description>
+    <title>home office on Sylvia Moss</title>
+    <link>https://sylviamoss.github.io/tags/home-office/</link>
+    <description>Recent content in home office on Sylvia Moss</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 29 Nov 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://sylviamoss.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://sylviamoss.github.io/tags/home-office/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,16 +19,6 @@
       <guid>https://sylviamoss.github.io/porta-cabos-de-embalagem/</guid>
       <description>Últimamente tenho tentado achar utilidade para as embalagens de plástico que invevitalmente tenho que comprar. Moro em um apartamento pequeno, trabalho de casa, e meu escritório fica no mesmo quarto em que durmo.
 Possuo dois monitores ligados ao meu computador, e outros demais dispositivos que requerem cabos, muitos cabos!!! Tantos cabos que deixam meu quarto muito mais pesado do que deveria. Além disso, existem outros probleminhas que uma pessoa com quatros gatos, como eu, pode ter.</description>
-    </item>
-    
-    <item>
-      <title>Acceptance testing a SMB client on CircleCI</title>
-      <link>https://sylviamoss.github.io/smb-client-on-circleci/</link>
-      <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://sylviamoss.github.io/smb-client-on-circleci/</guid>
-      <description>Background A AAAAAAA The hashicorp/go-getter library is largely used through HashiCorp products such as Packer, Nomad, and Terraform. According to the library documentation:
- go-getter is a library for Go (golang) for downloading files or directories from various sources using a URL as the primary form of input. The power of this library is being flexible in being able to download from a number of different sources (file paths, Git, HTTP, Mercurial, etc.</description>
     </item>
     
   </channel>
