@@ -12,6 +12,17 @@
     
     
     <item>
+      <title>Understanding and Creating Pseudo-Terminals (PTY)</title>
+      <link>https://sylviamoss.github.io/pseudo-terminals/</link>
+      <pubDate>Wed, 21 Apr 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://sylviamoss.github.io/pseudo-terminals/</guid>
+      <description>This content was written based on Chapter 6 of the Hands-On System Programming with Go book written by Alex Guerrieri.
+ Introduction Pseudo-terminals, or pseudo-teletypes, are applications that run under a terminal. Many programs are built as pseudo-terminal because it enables interactive use from inside a terminal without needing any graphical interface.
+As a software engineer, we use many applications that are built as pseudo-terminal. One of them is the SSH Client.</description>
+    </item>
+    
+    <item>
       <title>Criando porta cabos com embalagem de plástico</title>
       <link>https://sylviamoss.github.io/porta-cabos-de-embalagem/</link>
       <pubDate>Sun, 29 Nov 2020 00:00:00 +0000</pubDate>
@@ -27,7 +38,7 @@ Possuo dois monitores ligados ao meu computador, e outros demais dispositivos qu
       <pubDate>Tue, 09 Jun 2020 00:00:00 +0000</pubDate>
       
       <guid>https://sylviamoss.github.io/smb-client-on-circleci/</guid>
-      <description>Background A AAAAAAA The hashicorp/go-getter library is largely used through HashiCorp products such as Packer, Nomad, and Terraform. According to the library documentation:
+      <description>Background The hashicorp/go-getter library is largely used through HashiCorp products such as Packer, Nomad, and Terraform. According to the library documentation:
  go-getter is a library for Go (golang) for downloading files or directories from various sources using a URL as the primary form of input. The power of this library is being flexible in being able to download from a number of different sources (file paths, Git, HTTP, Mercurial, etc.</description>
     </item>
     

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
   <meta name="generator" content="Hugo 0.74.3" />
-  <link rel="canonical" href="https://sylviamoss.github.io/post/">
+  <link rel="canonical" href="https://sylviamoss.github.io/pseudo-terminals/">
 
   
 
@@ -34,7 +34,7 @@
 
   
   
-  <title>Blog | Sylvia Moss</title>
+  <title>Understanding and Creating Pseudo-Terminals (PTY) | Sylvia Moss</title>
   <meta name="google-site-verification" content="-kYqV7TxyGenD7O0fnxjDXJvhinpuFeDgLcYvNU0AqU" />
 </head>
 
@@ -210,44 +210,264 @@
         <div>
           
   <main id="main">
-    <h1>Blog</h1>
-    <ul class="patterns-list">
+    <h1>
+      <svg class="bookmark-icon" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
+        <use xlink:href="#bookmark"></use>
+      </svg>
+      Understanding and Creating Pseudo-Terminals (PTY)
+    </h1>
+
+    <div class="date">
+      
+      
+      <strong aria-hidden="true">Publish date: </strong>Wed, 21 Apr 2021
+      
+        
+          <br>
+          <strong aria-hidden="true">Last updated: </strong>Wed, 21 Apr 2021
+        
+      
+    </div>
+
     
-      <li>
-        <h2>
-          <a href="https://sylviamoss.github.io/pseudo-terminals/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Understanding and Creating Pseudo-Terminals (PTY)
+      <div class="tags">
+        <strong aria-hidden="true">Tags: </strong>
+        <ul aria-label="tags">
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://sylviamoss.github.io/tags/pty/">pty</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://sylviamoss.github.io/tags/cli/">cli</a>
+            </li>
+          
+            <li>
+              <svg class="tag-icon" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+                <use xlink:href="#tag"></use>
+              </svg>
+              
+              <a href="https://sylviamoss.github.io/tags/tutorial/">tutorial</a>
+            </li>
+          
+        </ul>
+      </div>
+    
+    
+    
+      
+
+  <nav class="toc" aria-labelledby="toc-heading">
+    <h2 id="toc-heading">Table of contents</h2>
+    <ol>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#introduction">
+            Introduction
           </a>
-        </h2>
-      </li>        
-    
-      <li>
-        <h2>
-          <a href="https://sylviamoss.github.io/porta-cabos-de-embalagem/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Criando porta cabos com embalagem de plástico
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#creating-a-basic-pty">
+            Creating a Basic PTY
           </a>
-        </h2>
-      </li>        
-    
-      <li>
-        <h2>
-          <a href="https://sylviamoss.github.io/smb-client-on-circleci/">
-            <svg class="bookmark" aria-hidden="true" viewBox="0 0 40 50" focusable="false">
-              <use xlink:href="#bookmark"></use>
-            </svg>
-            Acceptance testing a SMB client on CircleCI
+        </li>
+      
+        <li>
+          
+          
+          
+          
+          <a href="#conclusion">
+            Conclusion
           </a>
-        </h2>
-      </li>        
+        </li>
+      
+    </ol>
+  </nav>
+
+
     
-    </ul>
+
+    <blockquote>
+<p>This content was written based on Chapter 6 of the <a href="https://www.packtpub.com/product/hands-on-systems-programming-with-go/9781789804072"><strong>Hands-On System Programming with Go</strong></a> book written by Alex Guerrieri.</p>
+</blockquote>
+<h2 id="introduction">Introduction</h2>
+<p>Pseudo-terminals, or pseudo-teletypes, are applications that run under a terminal. Many programs are built as pseudo-terminal because it enables interactive use from inside a terminal without needing any graphical interface.</p>
+<p>As a software engineer, we use many applications that are built as pseudo-terminal. One of them is the SSH Client. SSH means Secure Shell, and the shell is a computer program that exposes an operating system&rsquo;s services generally as a command-line interface.</p>
+<p><strong>PTY</strong> are the initials of pseudo-teletype and is the formal way to call a pseudo-terminal. This name is inherited from TTY, which means teletype, and is the name for typewriters. Typewriters are electromechanical systems connected to a computer, capable of sending information to the device to print it. TTY is also the name of a special device used by deaf or speech-impaired people to communicate through the telephone. In this device, typed messages go back and forth instead of talking and listening to each other. In this case, a TTY is required at both ends.</p>
+<p>In order to be considered a PTY, an application needs to be capable of:</p>
+<ul>
+<li>accepting input from the user;</li>
+<li>sending input to the console and receiving back the output;</li>
+<li>showing the received output to the user.</li>
+</ul>
+<h2 id="creating-a-basic-pty">Creating a Basic PTY</h2>
+<p>A PTY is composed of three main parts:</p>
+<ul>
+<li>input manager;</li>
+<li>command selector;</li>
+<li>command execution.</li>
+</ul>
+<p>We will go through implementing these three major features of a PTY, starting with the <strong>Input Manager</strong>.</p>
+<h3 id="input-manager">Input Manager</h3>
+<p>We will take baby steps and start simple. Let&rsquo;s create a simple <a href="https://blog.golang.org/using-go-modules">go module</a> project with an empty <code>main.go</code> file.</p>
+<p>We will write a program with a for loop that will read user inputs through out the command line standard input. In Golang, we wil achieve that by listening to the os.Stdin and scanning the inputs with bufio.Scanner. The code should look similar to the following:</p>
+<pre><code class="language-golang">func main() {
+	s := bufio.NewScanner(os.Stdin) // read input
+	w := os.Stdout // write output
+	fmt.Fprintln(w, &quot;Welcome to my PTY! Type something and I will echo it...&quot;)
+	for {
+		s.Scan() // Get next token
+		input := string(s.Bytes())
+		fmt.Fprintf(w, &quot;You wrote %q\n&quot;, input) 
+	}
+}
+</code></pre>
+<p>Right now, the only way to stop the execution of the application is killing it with a kill command. We are interested to allow the uset to input a command that will terminate the application execution. We can achieve that with a small change to the previous code:</p>
+<pre><code class="language-golang">func main() {
+	s := bufio.NewScanner(os.Stdin)
+	w := os.Stdout
+	fmt.Fprintln(w, &quot;Welcome to my PTY! Type something and I will echo it...&quot;)
+	for {
+		s.Scan() // get next token
+		input := string(s.Bytes())
+		if input == &quot;exit&quot; {
+			return
+		}
+		fmt.Fprintf(w, &quot;You wrote %q\n&quot;, input)
+	}
+}
+</code></pre>
+<p>Now the application has an exit point other than the kill command. For now, it does not implement any command besides the exit one, and all it does is print back whatever is typed by the user.</p>
+<h3 id="command-selector">Command Selector</h3>
+<p>To add new commands to our PTY, we need to be able to interpret different commands correctly. Commands might accept arguments, so we start by splitting the input into those arguments. We can use the <code>strings.Split</code> function to do the trick.</p>
+<pre><code class="language-golang">args := strings.Split(input, &quot; &quot;)
+cmd := args[0]
+args = args[1:]
+</code></pre>
+<p>The split function will break the input at the separator we provide, which will be a single space <code>&quot; &quot;</code>. This is the same logic that the operating system applies to arguments passed to a process.</p>
+<p>Breaking the input into <code>command</code> and <code>arguments</code>, make it possible to execute any sort of check on the <code>cmd</code> value. In this case, we will create a switch statement that will execute a specific function for a given command.</p>
+<pre><code class="language-golang">switch cmd {
+case &quot;exit&quot;: 
+    return
+case &quot;someCommand&quot;:
+    someCommand(w, args) 
+case &quot;anotherCommand&quot;:
+    anotherCommand(w, args) 
+}
+</code></pre>
+<p>This allows adding any command by defining a function and adding a new case to the switch.</p>
+<h3 id="command-execution">Command Execution</h3>
+<p>For the command execution, we can define how a command function should look alike by creating a variable out of the function signature.</p>
+<pre><code class="language-golang">var cmdFunc func(w io.Writer, args []string) (exit bool)
+</code></pre>
+<p>With that, we can write the function for the <code>exit</code> command.</p>
+<pre><code class="language-golang">func exitCmd(w io.Writer, args []string) bool {
+	fmt.Fprintln(w, &quot;Bye! :D&quot;)
+	return true
+}
+</code></pre>
+<p>Now, we update our main code to make use of the new <code>cmdFunc</code> and <code>exitCmd</code>.</p>
+<pre><code class="language-golang">switch cmd {
+case &quot;exit&quot;:
+    cmdFunc = exitCmd
+}
+if cmdFunc == nil {
+    fmt.Fprintln(w, &quot;command %q not found&quot;, cmd)
+    continue
+}
+if cmdFunc(w, args) {
+    return
+}
+</code></pre>
+<p>With that, we can play around and implement any command function of the same type as <code>cmdFunc</code>. Let’s create one more command as an example, a <code>shuffle</code> command, which will print the arguments in a shuffled order. To do that, we will use the <code>match/rand</code> package.</p>
+<pre><code class="language-golang">func shuffleCommand(w io.Writer, args []string) bool {
+	rand.Seed(time.Now().UnixNano())
+	rand.Shuffle(len(args), func(i, j int) {
+		args[i], args[j] = args[j], args[i]
+	})
+	for i := range args {
+		if i &gt; 0 {
+			fmt.Fprintf(w, &quot; &quot;)
+		}
+		fmt.Fprintf(w, &quot;%s&quot;, args[i])
+	}
+	fmt.Fprintln(w)
+	return false
+}
+</code></pre>
+<p>Now we add it to the main swith:</p>
+<pre><code class="language-golang">switch cmd {
+case &quot;exit&quot;:
+    cmdFunc = exitCmd
+case &quot;shuffle&quot;:
+    cmdFunc = shuffleCommand
+}
+</code></pre>
+<p>That&rsquo;s it, you&rsquo;ve just created a PTY with two commands <code>exit</code> and <code>shuffle</code>.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>With that, we learned that creating a basic PTY is pretty simple and straightforward. Our PTY has a huge room to grow and I encourage you to try to improve it. Some possible improvements are:</p>
+<ul>
+<li>Create a help command and add descriptions to each of the commands</li>
+<li>Suggest commands using the <code>levenshtein algorithm</code></li>
+<li>Make commands extensible without needing to add new commands to the main package</li>
+</ul>
+<p>The list of improvements is infinite and I can stay here thinking and writing the list forever.</p>
+<p>Thanks for reading until the very end and, if you interested to see the code I wrote for this article, <a href="https://play.golang.org/p/HncuuNtfSmO">here is the go playground link</a>. The playground doesn&rsquo;t have a console to input text, so the PTY won&rsquo;t work there and you need to build it in your machine to try it out.</p>
+
   </main>
+  <div id="disqus-container">
+  
+    <button id="disqus-button" onclick="showComments()">Show comments</button>
+    <div id="disqus-comments">
+      
+      
+      
+        <div id="disqus_thread">
+        </div>
+        <script type="application/javascript">
+          function showComments() {
+            // Config
+var disqus_config = function () {
+};
+// Build and append comments 
+var d = document;
+var s = d.createElement('script');
+s.async = true;
+s.src = '//' + "sylviamoss" + '.disqus.com/embed.js';
+s.setAttribute('data-timestamp', + new Date());
+(d.head || d.body).appendChild(s);
+            // Remove button
+var disqusButton = document.getElementById('disqus-button');
+disqusButton.parentNode.removeChild(disqusButton); 
+// Un-hide comments
+var disqusComments = document.getElementById('disqus-comments');
+disqusComments.style.display = 'block'; 
+          }
+        </script>
+      
+      <noscript>Enable JavaScript to view Disqus comments.</noscript>
+    </div>
+  
+</div>
+
 
           <footer role="contentinfo">
   <div>
