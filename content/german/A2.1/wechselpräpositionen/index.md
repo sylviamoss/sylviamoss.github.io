@@ -1,10 +1,8 @@
 ---
 date: "2024-02-14"
 tags: ["german", "wechselpräpositionen", "a2.1"]
-title: "Kapitel 2 - Konjunktion weil"
+title: "Kapitel 2 - Wechselpräpositionen"
 ---
-
-# Wechselpräpositionen
 
 Status: Done
 Summary: Kapitel 2
@@ -25,7 +23,7 @@ Two-case prepositions, work for both Dativ and Akkusativ
 | zwischen             | between                                                                |
 | in                   | inside                                                                 |
 
-![Untitled](Wechselpra%CC%88positionen%20737fba0d0acf4142b56ee2cfd9cf30de/Untitled.png)
+![Untitled](Untitled.png)
 
 When there is **no movement**, we use **Dativ** to express the current location. 
 

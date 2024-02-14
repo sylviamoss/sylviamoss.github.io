@@ -1,16 +1,14 @@
 ---
 date: "2024-02-14"
-title: "Kapitel 2 - Konjunktion weil"
+title: "Kapitel 2 - Direktionaladverbien"
 ---
-
-# Direktionaladverbien
 
 Status: Done
 Summary: Kapitel 2
 
 Die Direktionaladverbien geben eine Richtung an: **Wohin? Woher?** *(To where? From where?)*
 
-![Untitled](Direktionaladverbien%20a13ef8631c56460f9d903be9ebd5cc27/Untitled.png)
+![Untitled](Untitled.png)
 
 | Wo? (Dat) | Wohin? (Akk) |
 | --------- | ------------ |
@@ -23,6 +21,6 @@ Die Direktionaladverbien geben eine Richtung an: **Wohin? Woher?** *(To where? 
 |           | runter       |
 |           | rüber        |
 
-![Untitled](Direktionaladverbien%20a13ef8631c56460f9d903be9ebd5cc27/Untitled%201.png)
+![Untitled](Untitled%201.png)
 
-![Untitled](Direktionaladverbien%20a13ef8631c56460f9d903be9ebd5cc27/Untitled%202.png)
+![Untitled](Untitled%202.png)
