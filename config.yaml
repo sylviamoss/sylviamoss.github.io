@@ -47,9 +47,9 @@ menu:
     - name: Playlist
       url: /playlist/
       weight: 4
-    - name: Tags
-      url: /tags/
-      weight: 5
+    # - name: Tags
+    #   url: /tags/
+    #   weight: 5
 
 markup:
   defaultMarkdownHandler: goldmark

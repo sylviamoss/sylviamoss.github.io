@@ -1,15 +1,10 @@
 ---
 date: "2024-02-14"
-tags: ["german", "weil", "a2.1"]
-title: "Konjunktion weil"
+title: "Kapitel 1 - Konjunktion weil"
 ---
 
-# Konjunktion weil
-
-Status: Done
+Status: Donehug
 Summary: Kapitel 1
-Due: January 3, 2024
-Project: A2.1 Review (https://www.notion.so/A2-1-Review-7592728adab94d1d88022f9608cb3f07?pvs=21)
 
 ## Konjunktion weil
 
