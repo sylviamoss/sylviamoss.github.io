@@ -3,7 +3,7 @@ languageCode: en-us
 defaultContentLanguage: en
 title: Sylvia Moss
 theme: cupper-hugo-theme
-disqusShortname: moss
+disqusShortname: sylviamoss
 enableGitInfo: true
 
 taxonomies:
@@ -24,21 +24,26 @@ params:
   dateFormat: Mon, 02 Jan 2006
   katex: true
   darkThemeAsDefault: false
+  customCss:
+    - css/home.css # relative path starting from static/
 
 menu:
   nav:
     - name: Home
       url: /
       weight: 1
+    # - name: Resume
+    #   url: /resume/
+    #   weight: 2
     - name: Blog
       url: /post/
-      weight: 2
+      weight: 3
     - name: Playlist
       url: /playlist/
-      weight: 3
+      weight: 4
     - name: Tags
       url: /tags/
-      weight: 4
+      weight: 5
 
 markup:
   defaultMarkdownHandler: goldmark

@@ -5,12 +5,11 @@ title: "Acceptance testing a SMB client on CircleCI"
 ---
 
 ## Background
-
-The [hashicorp/go-getter](https://github.com/hashicorp/go-getter) library is largely used through HashiCorp own products such as [Packer](https://www.packer.io/), [Nomad](https://www.nomadproject.io/), and [Terraform](https://www.terraform.io/). According to the library documentation:    
+The [hashicorp/go-getter](https://github.com/hashicorp/go-getter) library is largely used through HashiCorp products such as [Packer](https://www.packer.io/), [Nomad](https://www.nomadproject.io/), and [Terraform](https://www.terraform.io/). According to the library documentation:    
 
 > go-getter is a library for Go (golang) for downloading files or directories from various sources using a URL as the primary form of input. The power of this library is being flexible in being able to download from a number of different sources (file paths, Git, HTTP, Mercurial, etc.) using a single string as input. 
 
-Thinking about the power of the library and to better respond to some of our products needs, [hashicorp/go-getter](https://github.com/hashicorp/go-getter) would implement a new Getter type to get artifacts from a shared folder using the SMB protocol. 
+Thinking about the power of the library and to better respond to some of these products needs, [hashicorp/go-getter](https://github.com/hashicorp/go-getter) would implement a new Getter type to get artifacts from a shared folder using the SMB protocol. 
 
 The proposed SMB getter would use the smbclient command and the code had to be well tested to make sure all the use cases were addressed. The challenge here was to start a SMB server on CircleCI and make the SMB getter tests, as the SMB client, try to download files from the shared folder.
 

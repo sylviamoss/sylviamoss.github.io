@@ -10,7 +10,11 @@ header, body {
     border-bottom: 0;
 }
 
-#technologies-icons {
+#technologies-icons, #technologies-icons-resume {
     font-size: 200%;
     margin: 0;
+}
+
+#technologies-icons-resume {
+    text-align: center;
 }
