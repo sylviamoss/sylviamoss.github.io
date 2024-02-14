@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>tutorial on Sylvia Moss</title>
+    <title>tutorial on Sylvia Moss Martinez</title>
     <link>https://sylviamoss.github.io/tags/tutorial/</link>
-    <description>Recent content in tutorial on Sylvia Moss</description>
+    <description>Recent content in tutorial on Sylvia Moss Martinez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://sylviamoss.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 21 Apr 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://sylviamoss.github.io/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Understanding and Creating Pseudo-Terminals (PTY)</title>
       <link>https://sylviamoss.github.io/pseudo-terminals/</link>
@@ -18,7 +14,7 @@
       
       <guid>https://sylviamoss.github.io/pseudo-terminals/</guid>
       <description>This content was written based on Chapter 6 of the Hands-On System Programming with Go book written by Alex Guerrieri.
- Introduction Pseudo-terminals, or pseudo-teletypes, are applications that run under a terminal. Many programs are built as pseudo-terminal because it enables interactive use from inside a terminal without needing any graphical interface.
+Introduction Pseudo-terminals, or pseudo-teletypes, are applications that run under a terminal. Many programs are built as pseudo-terminal because it enables interactive use from inside a terminal without needing any graphical interface.
 As a software engineer, we use many applications that are built as pseudo-terminal. One of them is the SSH Client.</description>
     </item>
     
