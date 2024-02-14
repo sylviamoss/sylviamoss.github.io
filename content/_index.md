@@ -10,7 +10,7 @@ date: "2017-06-26T18:27:58+01:00"
 
 <h2>hello you, welcome!</h2>
 
-Hi, I'm Sylvia Moss Martinez, a software engineer currently working at HashiCorp. Originally from Brazil, I now call Berlin home.
+Hi, I'm Sylvia, or just Moss, a software engineer currently working at HashiCorp. Originally from Brazil, I now call Berlin home.
 
 I'm currently learning German, which adds an exciting challenge to my life here. Aside from coding, I enjoy music and exploring new tunes.
 

@@ -10,19 +10,22 @@ taxonomies:
   tag: tags
 
 permalinks:
-  post: /:filename/
+  post: /post/:filename/
+  german: /german/:filename/
   playlist: /:filename/
 
 imaging:
   quality: 99
 
 params:
-  description: My dev things and some music I listen while coding.
-  homeMetaContent: Just dev related thing I did and think about. Some musics I listen while coding as well.
+  description: My software engineering things and hobbies.
+  homeMetaContent: Just dev related thing I did and think about. Some musics I listen while coding, and german content.
   footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: Mon, 02 Jan 2006
   katex: true
+  search: true
+  showThemeSwitcher: true
   darkThemeAsDefault: false
   customCss:
     - css/home.css # relative path starting from static/
@@ -37,6 +40,9 @@ menu:
     #   weight: 2
     - name: Blog
       url: /post/
+      weight: 2
+    - name: German
+      url: /german/
       weight: 3
     - name: Playlist
       url: /playlist/
