@@ -12,7 +12,9 @@ header, body {
 
 #technologies-icons, #technologies-icons-resume {
     font-size: 200%;
-    margin: 0;
+    margin: 5% 25% 5% 25%;
+    width: 50%;
+    align-self: center;
 }
 
 #technologies-icons-resume {
