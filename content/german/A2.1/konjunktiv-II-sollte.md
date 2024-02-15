@@ -3,11 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 4 - Konjunktiv II: sollte"
 ---
 
-Status: Done
-Summary: Kapitel 4
-
-## Konjunktiv II: sollte
-
 Mit dem Konjunktiv II kann man ausdrücken, dass etwas nicht real ist. Man verwendet diese Form in verschieden Situationen.
 
 *sollte* ist ein Modalverb.

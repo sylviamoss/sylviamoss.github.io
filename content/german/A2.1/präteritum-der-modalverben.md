@@ -3,9 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 6 - Präteritum der Modalverben"
 ---
 
-Status: Done
-Summary: Kapitel 6
-
 ## Präteritum
 
 Präteritum ist eine grammatische Zeitform, mit der Vergangenes ausgedrückt wird. Man benutzt es überwiegend in der geschriebenen Sprache, z. B. in Zeitungsartikeln und Literatur. Das Präteritum der Hilfsverben sein, haben und der Modalverben verwendet man auch in der gesprochenen Sprache. 

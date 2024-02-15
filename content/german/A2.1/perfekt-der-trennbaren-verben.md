@@ -3,9 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 1 - Perfekt der trennbaren Verben"
 ---
 
-Status: Done
-Summary: Kapitel 1
-
 Im Perfekt bildet man aus dem trennbaren Verb ein Partizip II → Zwischen dem Präfix und dem Verbstamm steht *-ge-*.
 
 **weg|fahren**: Ich bin schon seit einigen Jahren nicht mehr **weg***ge***fahren**

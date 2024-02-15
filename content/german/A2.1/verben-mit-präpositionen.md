@@ -3,8 +3,7 @@ date: "2024-02-14"
 title: "Kapitel 5 - Verben mit Präpositionen"
 ---
 
-Status: Done
-Summary: Kapitel 5
+## Verben mit Präpositionen
 
 Einige Präpositionen haben mehrere Bedeutungen. Deshalb lässt sich die Bedeutung einer Präposition oft nur aus dem jeweiligen Zusammenhang erschließen. 
 

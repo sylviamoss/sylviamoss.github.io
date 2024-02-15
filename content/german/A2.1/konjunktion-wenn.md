@@ -3,11 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 4 - Konjunktion wenn"
 ---
 
-Status: Done
-Summary: Kapitel 4
-
-## Nebensätze: wenn
-
 ### Konditionale Nebensätze mit *wenn*
 
 Die Konjunktion *wenn* leitet meistens einen **konditionalen** Nebensatz ein. Dieser Nebensatz kann in der Regel nicht allein stehen, sondern ist von einem übergeordneten Satz abhängig.

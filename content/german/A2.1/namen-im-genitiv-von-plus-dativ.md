@@ -3,9 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 1 - Namen im Genitiv: von + Dativ"
 ---
 
-Status: Done
-Summary: Kapitel 1
-
 ## Dativ Statt Genitiv
 
 In der gesprochenen Sprache verwendet man statt des Genitivs oft die Präposition *von + Dativ*

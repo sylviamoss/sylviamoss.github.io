@@ -3,9 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 2 - Direktionaladverbien"
 ---
 
-Status: Done
-Summary: Kapitel 2
-
 Die Direktionaladverbien geben eine Richtung an: **Wohin? Woher?** *(To where? From where?)*
 
 ![Untitled](Untitled.png)

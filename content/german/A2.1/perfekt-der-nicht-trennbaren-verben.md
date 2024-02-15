@@ -3,9 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 1 - Perfekt der nicht-trennbaren Verben"
 ---
 
-Status: Done
-Summary: Kapitel 1
-
 Bei regelmäßigen Verben beginnt das Partizip II meistens mit ge-, dann kommt der Verbstamm und am Ende steht -t.
 
 | Infinitiv   | Partizip II    |

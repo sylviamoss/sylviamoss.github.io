@@ -3,8 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 7 - Verben mit Dativ- uns Akkusativobjekt: Pronomen als Objekte"
 ---
 
-Status: Done
-Summary: Kapitel 7
 
 Das Dativobjekt oder das Akkusativobjekt kann ein Pronomen sein, wenn der Zuhörer bereits weiß, um welche Person oder welchen Gegenstand es sich handelt. 
 

@@ -3,9 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 7 - Dativ als Objekt: Possessivartikel"
 ---
 
-Status: Done
-Summary: Kapitel 7
-
 ## Possessivartikel
 
 Vor einem femininen Nomen oder einem Nomen im Plural endet der Possessivartikel im Nominativ auf -e:

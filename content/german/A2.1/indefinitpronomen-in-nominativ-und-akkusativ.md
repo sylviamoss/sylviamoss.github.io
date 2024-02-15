@@ -3,9 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 3 - Indefinitpronomen in Nominativ und Akkusativ"
 ---
 
-Status: Done
-Summary: Kapitel 3
-
 ## Zeitangaben: Wie oft?
 
 | Zeitangaben | z.B                                                                                                                                               |

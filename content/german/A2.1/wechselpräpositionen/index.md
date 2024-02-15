@@ -1,11 +1,7 @@
 ---
 date: "2024-02-14"
-tags: ["german", "wechselpräpositionen", "a2.1"]
 title: "Kapitel 2 - Wechselpräpositionen"
 ---
-
-Status: Done
-Summary: Kapitel 2
 
 Im Deutschen gibt es neun Wechselpräpositionen, die zwischen Dativ und Akkusativ wechseln: an, auf, hinter, in, neben, über, unter, vor, zwischen. Ich gehe in die Schule (Akk.). Ich sitze in der Schule (Dat.).
 

@@ -3,11 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 1 - Konjunktion weil"
 ---
 
-Status: Donehug
-Summary: Kapitel 1
-
-## Konjunktion weil
-
 Ein **Nebensatz** kann normalerweise nicht allein stehen. In einem Nebensatz steht das **konjugierte Verb** meistens ganz **am Ende**.
 
 Ein Nebensatz, der mit *weil* beginnt, antwortet auf die Frage “Warum?”.

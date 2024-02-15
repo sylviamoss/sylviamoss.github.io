@@ -3,11 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 6 - Konjunktion dass"
 ---
 
-Status: Done
-Summary: Kapitel 6
-
-## Nebensätze: dass
-
 Ein Nebensatz kann normalerweise nicht allein stehen. Es ist von einem übergeordneten Hauptsatz order einem Nebensatz abhängig. Zwischen dem übergeordneten Hauptsatz und dem Nebensatz steht ein Komma. In einem Nebensatz steht das konjugierte Verb fast immer am Ende. Häufig werden Nebensätze durch bestimmte einleitende Wörter mit dem übergeordneten Satz verbunden. Eines dieser einleitenden Wörter ist die unterordnende Konjunktion *dass.*
 
 Nebensätze mit *dass* können nicht an jeden Haupt- order Nebensatz angeschlossen werden. Bestimmte Ausdrücke lassen die Konstruktion mit *dass* zu. 

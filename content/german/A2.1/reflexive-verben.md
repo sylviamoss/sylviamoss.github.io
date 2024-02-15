@@ -3,8 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 5 - Reflexive Verben"
 ---
 
-Status: Done
-Summary: Kapitel 5
 
 Reflexive Verben sind Verben mit zusätzlichen Pronomen, die sich auf das Subjekt zurückbeziehen. Diese Pronomen heißen Reflexivpronomen
 

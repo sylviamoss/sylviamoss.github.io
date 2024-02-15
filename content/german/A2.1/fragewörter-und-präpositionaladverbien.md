@@ -3,9 +3,6 @@ date: "2024-02-14"
 title: "Kapitel 5 - Fragewörter und Präpositionaladverbien"
 ---
 
-Status: Done
-Summary: Kapitel 5
-
 ## Präpositionaladverbien
 
 - Ich habe viel Stress bei meiner Arbeit. Manchmal **ärgere** ich mich **darüber**.  (= über den Stress bei der Arbeit)
