@@ -25,7 +25,7 @@ params:
   dateFormat: Mon, 02 Jan 2006
   katex: true
   search: true
-  showThemeSwitcher: true
+  showThemeSwitcher: false
   darkThemeAsDefault: false
   customCss:
     - css/home.css # relative path starting from static/

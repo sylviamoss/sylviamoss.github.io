@@ -10,11 +10,13 @@ date: "2017-06-26T18:27:58+01:00"
 
 <h2>hello you, welcome!</h2>
 
-Hi, I'm Sylvia, or just Moss, a software engineer currently working at HashiCorp. Originally from Brazil, I now call Berlin home.
+Hey there, I'm Sylvia, also known as Moss, and I work as a software engineer at HashiCorp. Originally from Brazil, I'm currently living in Berlin.
 
-I'm currently learning German, which adds an exciting challenge to my life here. Aside from coding, I enjoy music and exploring new tunes.
+I'm diving into learning German, which adds an exciting challenge to my life here. You'll discover all my German notes neatly organized by level and subject in the menu on your left. They're super helpful for me and could be useful for others too.
 
-If you want to know more about me or have feedback on my website, feel free to reach out via one of the links below.    
+Apart from coding, I have a passion for music and love exploring new tunes. So, I'm also sharing some music (and podcast) with you under `Playlist`.
+
+If you'd like to know more about me or have feedback on my website, please reach out via the links below.    
 I'd love to hear from you! Let's connect and share our thoughts.
 
 
