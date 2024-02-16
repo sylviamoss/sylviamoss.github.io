@@ -1,5 +1,5 @@
 ---
-date: “2024-02-16"
+date: "2024-02-16"
 tags: ["vergleichspartikel"]
 title: Kapitel 9 - Vergleichspartikel als, wie
 ---
