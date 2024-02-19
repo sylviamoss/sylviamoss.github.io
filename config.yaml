@@ -5,7 +5,7 @@ title: Sylvia Moss
 theme: cupper-hugo-theme
 disqusShortname: sylviamoss
 enableGitInfo: true
-googleAnalytics: G-Y4T9TYJ5VX
+# googleAnalytics: G-Y4T9TYJ5VX
 
 taxonomies:
   tag: tags
