@@ -1,5 +1,6 @@
 ---
 date: "2024-02-14"
+tags: ["komparation"]
 title: "Kapitel 9 - Komparation: groß - großer - am größten"
 ---
 

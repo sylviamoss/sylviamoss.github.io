@@ -1,5 +1,6 @@
 ---
 date: "2024-02-14"
+tags: ["perfekt", "verben"]
 title: "Kapitel 1 - Perfekt der trennbaren Verben"
 ---
 

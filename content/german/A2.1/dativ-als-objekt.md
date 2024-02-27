@@ -1,5 +1,6 @@
 ---
 date: "2024-02-14"
+tags: ["artikel", "dativ"]
 title: "Kapitel 7 - Dativ als Objekt: Possessivartikel"
 ---
 

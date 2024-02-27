@@ -1,5 +1,6 @@
 ---
 date: "2024-02-14"
+tags: ["adjektiv"]
 title: "Kapitel 9 - Adjektivdeklination"
 ---
 

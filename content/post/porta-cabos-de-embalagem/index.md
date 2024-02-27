@@ -1,6 +1,6 @@
 ---
 date: "2020-11-29"
-tags: ["reciclagem", "diy", "home office"]
+tags: ["reciclagem", "diy"]
 title: "Criando porta cabos com embalagem de plástico"
 ---
 

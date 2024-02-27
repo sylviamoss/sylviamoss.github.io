@@ -1,5 +1,6 @@
 ---
 date: "2024-02-14"
+tags: ["konjunktion"]
 title: "Kapitel 4 - Konjunktion wenn"
 ---
 

@@ -1,5 +1,6 @@
 ---
 date: "2024-02-14"
+tags: ["verben", "präpositionen"]
 title: "Kapitel 5 - Verben mit Präpositionen"
 ---
 

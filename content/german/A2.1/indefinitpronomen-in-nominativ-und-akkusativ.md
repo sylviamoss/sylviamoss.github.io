@@ -1,5 +1,6 @@
 ---
 date: "2024-02-14"
+tags: ["pronomen","nominativ", "akkusativ"]
 title: "Kapitel 3 - Indefinitpronomen in Nominativ und Akkusativ"
 ---
 
