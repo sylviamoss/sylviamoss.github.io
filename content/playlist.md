@@ -26,4 +26,8 @@ title: Playlist
 
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/1mVIbuzr22V6fgZwxPj3uv?utm_source=generator" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/2cKdcxETn7jDp7uJCwqmSE?utm_source=generator" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<br>
+
 <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/2rnCPyV8A9J80QtmGj2pAx?utm_source=generator" width="40%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
