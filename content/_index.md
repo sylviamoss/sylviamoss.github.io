@@ -1,6 +1,6 @@
 ---
 date: "2017-06-26T18:27:58+01:00"
-# title: "Sylvia Moss"
+title: "Home"
 ---
 
 <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />          
@@ -56,3 +56,5 @@ If you'd like to know more about me or have feedback on my website, please reach
       <i class="fas fa-download"></i>
     </a> -->
 <!-- </div>  -->
+
+ ### latest posts

@@ -1,16 +1,12 @@
-/* header, body {
-    text-align: center;
-}
-
-*/
-
-#social-icons a {
+/* #social-icons a {
     font-size: 150%;
     padding: 1% 1% 0 1%;
     padding-bottom: 0%;
     color: darkred;
     border-bottom: 0;
 }
+
+*/
 
 #technologies-icons, #technologies-icons-resume {
     font-size: 200%;

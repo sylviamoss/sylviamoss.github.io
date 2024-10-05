@@ -20,7 +20,7 @@ imaging:
 
 params:
   # description: My software engineering things and hobbies.
-  navTitleText: Halli Hallo
+  # navTitleText: Halli Hallo
   logoAlt: An alternative text description of the logo
   homeMetaContent: Just dev related thing I did and think about. Some musics I listen while coding, and german content.
   footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
@@ -41,7 +41,7 @@ menu:
     # - name: Resume
     #   url: /resume/
     #   weight: 2
-    - name: Blog
+    - name: Posts
       url: /post/
       weight: 2
     # - name: German
