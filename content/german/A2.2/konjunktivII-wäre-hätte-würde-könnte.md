@@ -1,6 +1,6 @@
 ---
 date: "2024-02-14"
-tags: ["konjunktiv"]
+# tags: ["konjunktiv"]
 title: "Kapitel 8 - Konjunktiv II: wäre, hätte, würde, könnte"
 ---
 

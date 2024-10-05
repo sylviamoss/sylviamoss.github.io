@@ -1,6 +1,6 @@
 ---
 date: "2024-02-19"
-tags: ["adjektive", "wortbildung"]
+# tags: ["adjektive", "wortbildung"]
 title: "Kapitel 9 - Wortbildung: Adjektive"
 ---
 

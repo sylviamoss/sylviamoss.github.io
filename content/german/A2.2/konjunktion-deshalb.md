@@ -1,6 +1,6 @@
 ---
 date: "2024-03-05"
-tags: ["konjunktion"]
+# tags: ["konjunktion"]
 title: "Kapitel 11 - Konjunktion deshalb"
 ---
 

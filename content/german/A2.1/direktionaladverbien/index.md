@@ -1,6 +1,6 @@
 ---
 date: "2024-02-14"
-tags: ["adverbien"]
+# tags: ["adverbien"]
 title: "Kapitel 2 - Direktionaladverbien"
 ---
 

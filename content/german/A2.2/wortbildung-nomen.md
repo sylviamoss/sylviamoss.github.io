@@ -1,6 +1,6 @@
 ---
 date: "2024-02-27"
-tags: ["nomen", "wortbildung"]
+# tags: ["nomen", "wortbildung"]
 title: "Kapitel 10 - Wortbildung: Nomen"
 ---
 

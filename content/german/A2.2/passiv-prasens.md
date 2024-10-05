@@ -1,6 +1,6 @@
 ---
 date: "2024-02-19"
-tags: ["passiv", "präsens", "verben"]
+# tags: ["passiv", "präsens", "verben"]
 title: "Kapitel 10 - Passiv: Präsens"
 ---
 

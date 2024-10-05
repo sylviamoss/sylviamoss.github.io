@@ -1,6 +1,6 @@
 ---
 date: "2024-02-14"
-tags: ["modalverben", "präteritum"]
+# tags: ["modalverben", "präteritum"]
 title: "Kapitel 6 - Präteritum der Modalverben"
 ---
 

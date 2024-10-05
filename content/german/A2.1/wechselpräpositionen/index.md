@@ -1,6 +1,6 @@
 ---
 date: "2024-02-14"
-tags: ["präpositionen"]
+# tags: ["präpositionen"]
 title: "Kapitel 2 - Wechselpräpositionen"
 ---
 

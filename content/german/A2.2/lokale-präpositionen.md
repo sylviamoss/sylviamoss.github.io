@@ -1,6 +1,6 @@
 ---
 date: "2024-03-05"
-tags: ["präpositionen"]
+# tags: ["präpositionen"]
 title: "Kapitel 11 - Lokale Präpositionen"
 ---
 

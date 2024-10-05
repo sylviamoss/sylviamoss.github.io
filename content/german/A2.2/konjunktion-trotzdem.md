@@ -1,6 +1,6 @@
 ---
 date: "2024-02-14"
-tags: ["konjunktion"]
+# tags: ["konjunktion"]
 title: "Kapitel 8 - Konjunktion trotzdem"
 ---
 

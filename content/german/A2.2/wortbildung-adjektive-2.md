@@ -1,6 +1,6 @@
 ---
 date: "2024-03-05"
-tags: ["wortbildung", "adjektive"]
+# tags: ["wortbildung", "adjektive"]
 title: "Kapitel 11 - Wortbildung Adjektive -bar, -g, -isch"
 ---
 

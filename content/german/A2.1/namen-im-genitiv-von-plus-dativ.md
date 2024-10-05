@@ -1,6 +1,6 @@
 ---
 date: "2024-02-14"
-tags: ["präpositionen", "dativ", "genitiv"]
+# tags: ["präpositionen", "dativ", "genitiv"]
 title: "Kapitel 1 - Namen im Genitiv: von + Dativ"
 ---
 

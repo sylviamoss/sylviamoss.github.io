@@ -1,6 +1,6 @@
 ---
 date: "2024-02-14"
-tags: ["präpositionen", "dativ"]
+# tags: ["präpositionen", "dativ"]
 title: "Kapitel 7 - Präposition von + Dativ"
 ---
 

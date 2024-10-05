@@ -1,6 +1,6 @@
 ---
 date: "2024-02-14"
-tags: ["verben", "dativ", "akkusativ"]
+# tags: ["verben", "dativ", "akkusativ"]
 title: "Kapitel 7 - Verben mit Dativ- uns Akkusativobjekt: Pronomen als Objekte"
 ---
 

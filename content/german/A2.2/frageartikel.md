@@ -1,6 +1,6 @@
 ---
 date: "2024-02-21"
-tags: ["frageartikel", "artikel", "fragepronomen",] 
+# tags: ["frageartikel", "artikel", "fragepronomen",] 
 title: "Kapitel 10 - Frageartikel: Was für ein…?"
 ---
 
