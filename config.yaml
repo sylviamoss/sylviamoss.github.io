@@ -33,6 +33,7 @@ params:
   darkThemeAsDefault: false
   customCss:
     - css/home.css # relative path starting from static/
+    - css/template-styles.css 
 
 menu:
   nav:

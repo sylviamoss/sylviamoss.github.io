@@ -1,6 +1,6 @@
 ---
 date: "2024-06-23"
-tags: ["gophercon", "genAI", "golang"]
+tags: ["Go", "Conferences"]
 title: "What Happened at GopherCon Europe 2024"
 ---
 

@@ -1,6 +1,6 @@
 ---
 date: "2021-04-21"
-tags: ["cli", "tutorial"]
+tags: ["CLI Tools", "Tutorial"]
 title: "Understanding and Creating Pseudo-Terminals (PTY)"
 ---
 

@@ -13,6 +13,22 @@
           {{ .Title }}
         </a>
       </h2>
+      {{ $dateFormat := $.Site.Params.dateFormat | default "Jan 2, 2006" }}
+      {{ .PublishDate.Format $dateFormat }}
+      
+      {{ with .Params.tags }}
+      {{ range . }}
+      
+      <svg class="tag-icon-list" aria-hidden="true" viewBox="0 0 177.16535 177.16535" focusable="false">
+        <use href="#tag"></use>
+      </svg>
+      
+      {{ $href := print ("tags/" | relLangURL) (. | urlize) "/" }}
+      <a href="{{ $href }}">{{ . }}</a>
+      
+      {{ end }}
+      
+      {{end}}
     </li>
     {{ end }}
   </ul>

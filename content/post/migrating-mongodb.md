@@ -1,6 +1,6 @@
 ---
 date: "2024-10-05"
-tags: ["mongodb", "migration", "database", "mongodump", "mongorestore"]
+tags: ["MongoDB", "Database", "CLI Tools"]
 title: "Migrating MongoDB with mongo[dump/restore] "
 ---
 

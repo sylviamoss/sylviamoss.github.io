@@ -1,6 +1,6 @@
 ---
 date: "2020-06-09"
-tags: ["testing"]
+tags: ["CI", "Testing"]
 title: "Acceptance testing a SMB client on CircleCI"
 ---
 
