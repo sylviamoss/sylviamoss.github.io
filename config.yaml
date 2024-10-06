@@ -19,6 +19,7 @@ imaging:
   quality: 99
 
 params:
+  author: Sylvia Moss Martinez
   # description: My software engineering things and hobbies.
   # navTitleText: Halli Hallo
   logoAlt: An alternative text description of the logo
