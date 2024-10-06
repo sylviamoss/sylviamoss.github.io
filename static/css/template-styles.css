@@ -324,6 +324,7 @@ caption {
     overflow-x: hidden;
 }
 .intro-and-nav {
+    background-color: rgb(220, 201, 153);
     font-size: 0.8rem;
     width: 15rem;
     height: 100vh;
@@ -743,6 +744,7 @@ li > svg {
     height: 0.75em;
     width: 0.75em;
     margin-right: 0.25em;
+    color: darkgoldenrod;
 }
 li>svg.tag-icon-list {
     height: 0.75em;
