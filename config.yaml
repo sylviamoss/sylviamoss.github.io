@@ -1,7 +1,7 @@
 baseURL: https://sylviamoss.github.io
 languageCode: en-us
 defaultContentLanguage: en
-title: Sylvia Moss
+title: Moss
 theme: cupper-hugo-theme
 disqusShortname: sylviamoss
 enableGitInfo: true
