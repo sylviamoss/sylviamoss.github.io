@@ -23,7 +23,7 @@ params:
   # navTitleText: Halli Hallo
   logoAlt: An alternative text description of the logo
   homeMetaContent: Just dev related thing I did and think about. Some musics I listen while coding, and german content.
-  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
+  footer: Made with [Hugo](https://gohugo.io/)
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: Mon, 02 Jan 2006
   katex: true
