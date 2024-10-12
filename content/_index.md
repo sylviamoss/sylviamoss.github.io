@@ -12,6 +12,6 @@ I like many things but what I like the most is fixing things, cuddling with my w
 If you'd like to know more about me or have feedback on my website, please reach out. Let's connect and share our thoughts!
 
 ### projects
-[VacinaPet](https://vacinapet.com) | [diceware-cli](https://github.com/sylviamoss/diceware-cli)   
+[VacinaPet](https://vacinapet.com) | [diceware-cli](https://github.com/sylviamoss/diceware-cli) | [ColorflowLab](https://www.etsy.com/de/shop/ColorflowLab) | [Mosses3d](https://www.instagram.com/mosses3d)
 
  ### latest posts
